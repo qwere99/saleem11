@@ -1,8 +1,17 @@
-function Home() {
-  
+import React from "react";
 
-  return <h1>الرئيسية</h1>;
-  section className'bg-[#1f1f1f]'> Now let's build the UI</section> 
-}
+const Home = () => {
+  return (
+    <>
+      <h1>الرئيسية</h1>
+      <section className="bg-[#1f1f1f] h-[calc(100vh-5rem)] overflow-hidden flex gap-4">
+        {/* Left Div */}
+        <div className="flex-[3] bg-red-600"></div>
+        {/* Right Div */}
+        <div className="flex-[2] bg-blue-600"></div>
+      </section>
+    </>
+  );
+};
 
 export default Home;
